@@ -1,0 +1,338 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20210105.103156.4617.0.001.json",
+    "dumpEventTime": "2021-01-05T10:31:56Z",
+    "dumpEventTimeStamp": "1609853516458",
+    "processId": 4617,
+    "cwd": "/home/pi/Desktop/challengesHackerRank",
+    "commandLine": [
+      "node",
+      "/home/pi/Desktop/challengesHackerRank/desafio9.js"
+    ],
+    "nodejsVersion": "v12.13.0",
+    "glibcVersionRuntime": "2.28",
+    "glibcVersionCompiler": "2.24",
+    "wordSize": 32,
+    "arch": "arm",
+    "platform": "linux",
+    "componentVersions": {
+      "node": "12.13.0",
+      "v8": "7.7.299.13-node.12",
+      "uv": "1.32.0",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019a",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.13.0/node-v12.13.0.tar.gz"
+    },
+    "osName": "Linux",
+    "osRelease": "4.19.97-v7+",
+    "osVersion": "#1294 SMP Thu Jan 30 13:15:58 GMT 2020",
+    "osMachine": "armv7l",
+    "cpus": [
+      {
+        "model": "ARMv7 Processor rev 4 (v7l)",
+        "speed": 1200,
+        "user": 5385800,
+        "nice": 600,
+        "sys": 1191900,
+        "idle": 40899500,
+        "irq": 0
+      },
+      {
+        "model": "ARMv7 Processor rev 4 (v7l)",
+        "speed": 1200,
+        "user": 5625300,
+        "nice": 1400,
+        "sys": 999400,
+        "idle": 42098300,
+        "irq": 0
+      },
+      {
+        "model": "ARMv7 Processor rev 4 (v7l)",
+        "speed": 1200,
+        "user": 5812000,
+        "nice": 100,
+        "sys": 998000,
+        "idle": 41918000,
+        "irq": 0
+      },
+      {
+        "model": "ARMv7 Processor rev 4 (v7l)",
+        "speed": 1200,
+        "user": 5458700,
+        "nice": 300,
+        "sys": 998600,
+        "idle": 42170800,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "wlan0",
+        "internal": false,
+        "mac": "b8:27:eb:6a:d6:1d",
+        "address": "192.168.0.100",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "wlan0",
+        "internal": false,
+        "mac": "b8:27:eb:6a:d6:1d",
+        "address": "fe80::5076:5ceb:73aa:da1f",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 3
+      }
+    ],
+    "host": "raspberrypi"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+  ],
+  "javascriptHeap": {
+    "totalMemory": 249081856,
+    "totalCommittedMemory": 248141664,
+    "usedMemory": 247343240,
+    "availableMemory": 1165940,
+    "memoryLimit": 248512512,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 22240,
+        "capacity": 262008,
+        "used": 22104,
+        "available": 239904
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 671528,
+        "capacity": 524016,
+        "used": 146968,
+        "available": 377048
+      },
+      "old_space": {
+        "memorySize": 219729920,
+        "committedMemory": 219723072,
+        "capacity": 219606892,
+        "used": 219581920,
+        "available": 24972
+      },
+      "code_space": {
+        "memorySize": 425984,
+        "committedMemory": 228640,
+        "capacity": 190112,
+        "used": 190112,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 147192,
+        "capacity": 101560,
+        "used": 101560,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 27299840,
+        "committedMemory": 27299840,
+        "capacity": 27296544,
+        "used": 27296544,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 4032,
+        "used": 4032,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 524016,
+        "used": 0,
+        "available": 524016
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 113.001,
+    "kernelCpuSeconds": 1.23273,
+    "cpuConsumptionPercent": 103.849,
+    "maxRss": 281284608,
+    "pageFaults": {
+      "IORequired": 354,
+      "IONotRequired": 83328
+    },
+    "fsActivity": {
+      "reads": 75328,
+      "writes": 0
+    }
+  },
+  "uvthreadResourceUsage": {
+    "userCpuSeconds": 57.21,
+    "kernelCpuSeconds": 0.925012,
+    "cpuConsumptionPercent": 52.85,
+    "fsActivity": {
+      "reads": 72952,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "USER": "pi",
+    "LANGUAGE": "en_US.UTF-8",
+    "VSCODE_NLS_CONFIG": "{\"locale\":\"pt-br\",\"availableLanguages\":{\"*\":\"pt-br\"},\"_languagePackId\":\"ae14048d28f6d1c3cb7e7449a04e58c0.pt-br\",\"_translationsConfigFile\":\"/home/pi/.config/Code - OSS (headmelted)/clp/ae14048d28f6d1c3cb7e7449a04e58c0.pt-br/tcf.json\",\"_cacheRoot\":\"/home/pi/.config/Code - OSS (headmelted)/clp/ae14048d28f6d1c3cb7e7449a04e58c0.pt-br\",\"_resolvedLanguagePackCoreLocation\":\"/home/pi/.config/Code - OSS (headmelted)/clp/ae14048d28f6d1c3cb7e7449a04e58c0.pt-br/6526fe0a1ade9d8f6e566811f4118191b84bf9f7\",\"_corruptedFile\":\"/home/pi/.config/Code - OSS (headmelted)/clp/ae14048d28f6d1c3cb7e7449a04e58c0.pt-br/corrupted.info\",\"_languagePackSupport\":true}",
+    "XDG_SEAT": "seat0",
+    "TEXTDOMAIN": "Linux-PAM",
+    "VSCODE_HANDLES_UNCAUGHT_ERRORS": "true",
+    "XDG_SESSION_TYPE": "x11",
+    "SSH_AGENT_PID": "586",
+    "SHLVL": "0",
+    "VSCODE_LOG_STACK": "true",
+    "HOME": "/home/pi",
+    "CHROME_DESKTOP": "code-oss-url-handler.desktop",
+    "DESKTOP_SESSION": "LXDE-pi",
+    "NVM_BIN": "/home/pi/.config/nvm/versions/node/v12.13.0/bin",
+    "VSCODE_IPC_HOOK": "/run/user/1000/vscode-4ecaae40-1.45.0-main.sock",
+    "NVM_INC": "/home/pi/.config/nvm/versions/node/v12.13.0/include/node",
+    "XDG_SEAT_PATH": "/org/freedesktop/DisplayManager/Seat0",
+    "VSCODE_LOGS": "/home/pi/.config/Code - OSS (headmelted)/logs/20210105T090801",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "PIPE_LOGGING": "true",
+    "NVM_DIR": "/home/pi/.config/nvm",
+    "QT_QPA_PLATFORMTHEME": "qt5ct",
+    "LOGNAME": "pi",
+    "_": "/usr/share/code-oss/code-oss",
+    "XDG_SESSION_CLASS": "user",
+    "XDG_SESSION_ID": "c1",
+    "SAL_USE_VCLPLUGIN": "gtk3",
+    "PATH": "/home/pi/.config/nvm/versions/node/v12.13.0/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/usr/lib/jvm/java-11-openjdk-armhf/bin",
+    "XDG_SESSION_PATH": "/org/freedesktop/DisplayManager/Session0",
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "XDG_MENU_PREFIX": "lxde-pi-",
+    "VSCODE_NODE_CACHED_DATA_DIR": "/home/pi/.config/Code - OSS (headmelted)/CachedData/6526fe0a1ade9d8f6e566811f4118191b84bf9f7",
+    "DISPLAY": ":0.0",
+    "LANG": "en_US.UTF-8",
+    "XDG_CURRENT_DESKTOP": "LXDE",
+    "XDG_SESSION_DESKTOP": "lightdm-xsession",
+    "XAUTHORITY": "/home/pi/.Xauthority",
+    "XDG_CONFIG_HOME": "/home/pi/.config",
+    "LS_COLORS": "",
+    "XDG_GREETER_DATA_DIR": "/var/lib/lightdm/data/pi",
+    "SSH_AUTH_SOCK": "/tmp/ssh-edVzFMnwpSVX/agent.525",
+    "SHELL": "/bin/bash",
+    "ELECTRON_RUN_AS_NODE": "1",
+    "GDMSESSION": "lightdm-xsession",
+    "NO_AT_BRIDGE": "1",
+    "VERBOSE_LOGGING": "true",
+    "_LXSESSION_PID": "525",
+    "GPG_AGENT_INFO": "/run/user/1000/gnupg/S.gpg-agent:0:1",
+    "XDG_VTNR": "7",
+    "LC_ALL": "en_US.UTF-8",
+    "PWD": "/home/pi/Desktop/challengesHackerRank",
+    "JAVA_HOME": "/usr/lib/jvm/java-11-openjdk-armhf",
+    "XDG_DATA_DIRS": "/usr/local/share:/usr/share/raspi-ui-overrides:/usr/share:/usr/share/gdm:/var/lib/menu-xdg",
+    "XDG_CONFIG_DIRS": "/etc/xdg",
+    "NVM_CD_FLAGS": "",
+    "AMD_ENTRYPOINT": "vs/workbench/services/extensions/node/extensionHostProcess",
+    "VSCODE_PID": "985",
+    "VSCODE_IPC_HOOK_EXTHOST": "/tmp/vscode-ipc-e378d6a4-9399-4d4d-99d4-7facc875c09b.sock"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 1048576,
+      "hard": 1048576
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": "unlimited"
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 7336,
+      "hard": 7336
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "linux-vdso.so.1",
+    "/usr/lib/arm-linux-gnueabihf/libarmmem-v7l.so",
+    "/lib/arm-linux-gnueabihf/libdl.so.2",
+    "/usr/lib/arm-linux-gnueabihf/libstdc++.so.6",
+    "/lib/arm-linux-gnueabihf/libm.so.6",
+    "/lib/arm-linux-gnueabihf/libgcc_s.so.1",
+    "/lib/arm-linux-gnueabihf/libpthread.so.0",
+    "/lib/arm-linux-gnueabihf/libc.so.6",
+    "/lib/ld-linux-armhf.so.3"
+  ]
+}
