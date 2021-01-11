@@ -3,7 +3,6 @@ function processData(inputString) {
     console.log(inputString)
 }
 
-
 process.stdin.resume();
 process.stdin.setEncoding("ascii");
 _input = "";
