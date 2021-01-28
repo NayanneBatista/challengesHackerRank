@@ -21,7 +21,7 @@ class Calculator {
 
     power(n, p) {
         try{
-            if(n > 0 && p > 0)
+            if(n >= 0 && p >= 0)
                 return Math.pow(n, p)
             else
                 throw new Error("n and p should be non-negative")
