@@ -23,18 +23,22 @@ function readLine() {
 }
 
 function gradingStudents(grades) {
-    let newGrades = [...grades]
+    let difference = 0
+    let result = []
+    
     for(let i = 0; i < grades.length; i++){
-        if(grades[i] < 40) newGrades[i] = grades[i]
-        else{
+        if(grades[i] >= 38 ){
             while(grades[i] % 5 != 0){
-            grades[i]++ 
-            newGrades[i] = grades[i]- newGrades[i]
+                grades[i]++ 
+                difference++   
             }
-        }
-    }
- 
-    return newGrades
+            result.push(difference < 3 ? grades[i] : grades[i] - difference) 
+            difference = 0 
+        } 
+        else   
+            result.push(grades[i])   
+    }   
+    return result 
 }
 
 function main() {
