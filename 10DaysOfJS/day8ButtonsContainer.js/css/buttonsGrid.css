@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 20px;
+    width: 100%;
+}
+
+.btns {
+    position: absolute;
+    width: 75%;
+}
+
+.btn {
+    position: relative;
+    width: 30%;
+    height: 48px;
+    font-size: 24px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-top: 5px;
+}
+
+.btn:hover {
+    background: rgba(207, 137, 6, 0.877);
+    color: white;
+    border-color: whitesmoke;
+    transition: .3s ease all;
+}
+
