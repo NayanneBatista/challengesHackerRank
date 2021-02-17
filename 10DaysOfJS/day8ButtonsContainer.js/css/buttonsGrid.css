@@ -9,13 +9,11 @@ body {
     width: 100%;
 }
 
-.btns {
-    position: absolute;
+#btns {
     width: 75%;
 }
 
 .btn {
-    position: relative;
     width: 30%;
     height: 48px;
     font-size: 24px;
@@ -30,4 +28,3 @@ body {
     border-color: whitesmoke;
     transition: .3s ease all;
 }
-
