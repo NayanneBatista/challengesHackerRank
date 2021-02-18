@@ -7,25 +7,19 @@
     </head>
 
     <body>
-        <div class="container">
+        <div id="res"></div>
 
-            <div id="res"></div>
-
-            <div id="btns">
-                    <button id="btn0" class="btns">0</button>
-                    <button id="btn1" class="btns">1</button>
-                    <button id="btnClr" class="btns">C</button>
-                    <button id="btnEql" class="btns">=</button>
-                    <button id="btnSum" class="btns">+</button>
-                    <button id="btnSub" class="btns">-</button>
-                    <button id="btnMul" class="btns">*</button>
-                    <button id="btnDiv" class="btns">/</button>
-                </div>
-                
-            </div>    
-        </div>
-
+        <div id="btns">
+            <button id="btn0" class="btns" onclick="processarInput(0)">0</button>
+            <button id="btn1" class="btns" onclick="processarInput(1)">1</button>
+            <button id="btnClr" class="btns" onclick="processarInput('C')">C</button>
+            <button id="btnEql" class="btns" onclick="processarInput('=')">=</button>
+            <button id="btnSum" class="btns" onclick="processarInput('+')">+</button>
+            <button id="btnSub" class="btns" onclick="processarInput('-')">-</button>
+            <button id="btnMul" class="btns" onclick="processarInput('*')">*</button>
+            <button id="btnDiv" class="btns" onclick="processarInput('/')">/</button>
+        </div>   
+        
         <script src="js/binaryCalculator.js" type="text/javascript"></script>
     </body>
-
 </html>

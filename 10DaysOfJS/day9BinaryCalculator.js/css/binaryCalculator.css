@@ -1,10 +1,7 @@
 body {
-    width: 33%;
-}
-
-.container {
     display: flex;
     flex-direction: column;
+    width: 33%;
 }
 
 #res {
@@ -24,7 +21,7 @@ body {
     color: white;
 } 
 
-#btnSum, #btnSub #btnMul, #btnDiv {
+#btnSum, #btnSub, #btnMul, #btnDiv {
     background-color: black;
     color: red;
 }
