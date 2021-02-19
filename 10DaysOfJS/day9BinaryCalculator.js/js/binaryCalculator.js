@@ -19,18 +19,31 @@ let operandos = []
 let result = 0
 
 function calcular(displayValue) {
+    
     if(displayValue.includes("+")){
         operandos = displayValue.split("+")
-        result = (parseInt(operandos[0])) + (parseInt(operandos[2]))
+        let x = parseInt(operandos[0], 2)
+        let y = parseInt(operandos[1], 2)
+        let sum = x + y 
+        result = sum.toString(2)
     }else if(displayValue.includes("-")){
         operandos = displayValue.split("-")
-        result = (parseInt(operandos[0])) - (parseInt(operandos[2]))
+        let x = parseInt(operandos[0], 2)
+        let y = parseInt(operandos[1], 2)
+        let sub = x - y 
+        result = sub.toString(2)
     }else if(displayValue.includes("*")){
-        operandos = displayValue.split("-")
-        result = (parseInt(operandos[0])) * (parseInt(operandos[2]))
-    }else(displayValue.includes("/")){
-        operandos = displayValue.split("-")
-        result = (parseInt(operandos[0])) / (parseInt(operandos[2]))
+        operandos = displayValue.split("*")
+        let x = parseInt(operandos[0], 2)
+        let y = parseInt(operandos[1], 2)
+        let mul = x * y 
+        result = mul.toString(2)
+    }else{
+        operandos = displayValue.split("/")
+        let x = parseInt(operandos[0], 2)
+        let y = parseInt(operandos[1], 2)
+        let div = x / y 
+        result = div.toString(2)
     }    
-    display.innerText = result
+    display.innerHTML = result
 }
